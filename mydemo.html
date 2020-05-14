@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+      body {
+        background-image: url('bg.jpg');
+      }
+      ul{list-style-type: none;}
+
+      ul li{display: inline; padding: 10px;}
+
+      .jumbotron{ background: none;}
+
+      .center {display: block; margin-left: auto; margin-
+      right: auto;}
+
+      .image:hover .overlay {display: block; width: 100%; height: 100%;}
+
+      #jum1{ background-color:#EBE9E9; color:black;}
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+      }
+
+      .next {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 25px;
+        width: 45px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      .fa:hover {
+          opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      .fa-rss {
+        background: #ff6600;
+        color: white;
+      }
+
+      .fixed-btn{
+        position: fixed;
+        background: #bb0000;
+        width: 180px;
+        height: 45px;
+        line-height: 45px;
+        bottom: 10%;
+        right: 3%;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .fixed-btn p{
+        text-transform: uppercase;
+        font-family: arial;
+        font-weight: 900;
+      }
+
+      .wrapper {
+        text-align: center;
+    }
+
+    .button {
+        position: absolute;
+        top: 50%;
+    }
+    </style>
+
+</head>
+  <body bgcolor="red">
+  <div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="#"><img height="40" width="180" src="images.png" alt="Your Dost"></a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://yourdost.com/talkItOut?from=showAllExperts">Experts</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://yourdost.com/forum/">Discussions</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://yourdost.com/coronavirus/emotionalwellness">COVID-19</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://yourdost.com/selfhelp">Self Test</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://yourdost.com/online-counseling-programs">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://yourdost.com/business-offerings/">For Business</a></li>
+     </ul>
+    </nav>
+   </div>
+
+   <br><br><br><br><br>
+
+
+    <div class="jumbotron">
+      <table>
+        <tr>
+          <td><h1>Get help. Get Better.</h1></td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <td><h3>No matter what's troubling you, get the support you <br> need, right here, right now.</h3></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <td><button type="button" name="button"><h5>Chat Now</h5></button></td>
+          <td> <a href="https://yourdost.com/bookAppointment"><button type="button" name="button"><h5>Book Appointment</h5></button></a> </td>
+        </tr>
+      </table>
+      <br><br>
+      <h6 align= "left">29 People are currently seeking guidance</h6>
+
+      <br><br><br><br><br>
+
+      <img src="extras.jpg" alt="extra" align="center">
+      <hr>
+      <br>
+      <h2 align="center">Three steps YourDOST can help you</h2>
+
+
+
+
+      <div class="container jumbotron" id="jum1">
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="1.jpg" alt="1">
+              <table align="center">
+                <tr>
+                  <td><h1>1</h1></td><td><h6 align="left">Connect with your <br> Expert</h6></td>
+                </tr>
+              </table>
+              <p>Chat anonymously with a YourDOST <br> expert who's here to help you and not <br> judge you.</p>
+            </div>
+          </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="2.jpg" alt="2">
+            <table align="center">
+              <tr>
+                <td><h1>2</h1></td><td><h6 align="left">Discuss your <br> Concerns</h6></td>
+              </tr>
+            </table>
+            <p>Open up to your Expert in a space <br> where you get the guidance you need, <br> and your concerns get the attention <br> they deserve.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="3.jpg" alt="3">
+            <table align="center">
+              <tr>
+                <td><h1>3</h1></td><td><h6 align="left">Unleash a Better <br> You</h6></td>
+              </tr>
+            </table>
+            <p>With 24X7 support from our experts, <br> bid goodbye to your old self and be on <br> your way to becoming a better you.</p>
+	        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div align="center">
+      <h1>Find Instant Support</h1>
+      <br>
+      <p>1000+ Experts with years of experience in counselling and successfully helping people overcome their emotions</p>
+    </div>
+
+    <div class="container jumbotron" id="jum1">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img src="1st.jpg" alt="1st">
+            <h5>Dr. Jini K. Gopinath</h5>
+            Clinical Psychologist, Hypnotherapist
+            <br><br>
+            <p>Over 2-decade experience in building resilient organisations, high performing teams and happier individuals</p>
+          </div>
+        </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="2nd.jpg" alt="2nd">
+          <h5>Chandrashekhar Tiwari</h5>
+          Clinical Psychologist, De-Addiction Specialist
+          <br><br>
+          <p>11+ years of experience working with clinical population on various emotional disorders and de-addiction cases</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="3rd.jpg" alt="3rd">
+          <h5>Dr Archana Tyagi</h5>
+          ACC(ICF) Coach, Psychologist
+          <br><br>
+          <p>30+ years of experience coaching, training and counseling individuals across various corporates and colleges</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+<center> <a href="https://yourdost.com/talkItOut?from=showAllExperts"><button type="button" name="button">BROWSE ALL EXPERTS</button></a> </center>
+<br><br>
+<div class="container jumbotron" id="jum1">
+<div class="row text-center">
+  <div class="col-sm-4">
+    <div class="image">
+      <img src="first.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <img src="one.jpg" alt="Avatar" class="next" width="300" height="300">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="image">
+      <img src="second.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <img src="two.jpg" alt="Avatar" class="next" width="300" height="300">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="image">
+      <img src="third.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <img src="three.jpg" alt="Avatar" class="next" width="300" height="300">
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row text-center">
+  <div class="col-sm-4">
+    <div class="image">
+      <img src="fourth.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <img src="four.jpg" alt="Avatar" class="next" width="300" height="300">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="image">
+      <img src="fifth.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <img src="five.jpg" alt="Avatar" class="next" width="300" height="300">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="sixth.jpg" class="image">
+	  </div>
+  </div>
+</div>
+</div>
+<br>
+<center> <a href="https://yourdost.com/online-counseling-programs"><button type="button" name="button">SEE ALL PROGRAMS</button></a> </center>
+<br><br>
+
+<h1 align="center">Latest on YourDost Blog</h1>
+<br><br><br>
+
+<div class="container jumbotron">
+  <div class="row text-center">
+    <div class="col-sm-6">
+      <div class="image">
+        <a href="http://yourdost.com/blog/2017/12/7-signs-that-show-you-have-way-too-much-stress-in-your-life.html"><img src="I.jpg" alt="Avatar" class="image"></a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="image">
+        <a href="http://yourdost.com/blog/2017/10/story-depression-mental-health.html"><img src="II.jpg" alt="Avatar" class="image"></a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row text-center">
+    <div class="col-sm-6">
+      <div class="image">
+        <a href="http://yourdost.com/blog/2017/05/6-ways-to-distinguish-counseling-from-advice.html"><img src="III.jpg" alt="Avatar" class="image"></a>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="image">
+        <a href="http://yourdost.com/blog/2017/05/how-to-encourage-your-loved-one-to-start-counseling.html"><img src="IV.jpg" alt="Avatar" class="image"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<center> <a href="http://yourdost.com/blog/"><button type="button" name="button">READ MORE ARTICLES</button></a> </center>
+<br><br><br>
+<h1 align="center">What do people say?</h1>
+<br><br>
+
+<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="a.jpg" alt="a">
+      </div>
+
+      <div class="item">
+        <img src="b.jpg" alt="b">
+      </div>
+
+      <div class="item">
+        <img src="c.jpg" alt="c">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <img src="press.jpg" alt="press">
+</div>
+
+<footer>
+<div>
+  <div class="container jumbotron">
+    <div class="row text-center">
+      <div class="col-sm-2" style="text-align: center;">
+        <ul style="list-style-type:none;"  class="wrapper">
+          <li align="left"> <h6>COUNSELLING</h6>
+            <li align="left"><a href="https://yourdost.com/career-academic-counsellors">Career/Academic</a></li><br>
+            <li align="left"><a href="https://yourdost.com/friends&family-counsellors">Friends&Family</a></li><br>
+            <li align="left"><a href="https://yourdost.com/love-relationship-counsellors">Love-Relationship</a></li><br>
+            <li align="left"><a href="https://yourdost.com/sexual-wellness-counsellors">Sexual-wellness</a></li><br>
+            <li align="left"><a href="https://yourdost.com/self-improvement-counsellors">Self Improvement</a></li><br>
+            <li align="left"><a href="https://yourdost.com/category-index">Category Index</a></li><br>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <ul style="list-style-type:none;">
+          <li align="left"> <h6>EXPERTS FROM</h6>
+            <li align="left"><a href="https://yourdost.com/counsellors-in-bangalore">Bangalore</a></li><br>
+            <li align="left"><a href="https://yourdost.com/counsellors-in-mumbai">Mumbai</a></li><br>
+            <li align="left"><a href="https://yourdost.com/counsellors-in-delhi">Delhi</a></li><br>
+            <li align="left"><a href="https://yourdost.com/counsellors-in-pune">Pune</a></li><br>
+            <li align="left"><a href="https://yourdost.com/counsellors-in-bhopal">Bhopal</a></li><br>
+            <li align="left"><a href="https://yourdost.com/counsellors-in-hyderabad">Hyderabad</a></li><br>
+            <li align="left"><a href="https://yourdost.com/counsellors-in-chennai">Chennai</a></li><br>
+            <li align="left"><a href="https://yourdost.com/city-index">City Index</a></li><br>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <ul style="list-style-type:none;">
+          <li align="left"> <h6>USEFUL LINKS</h6>
+            <li align="left"><a href="https://yourdost.com/talkItOut">Experts</a></li><br>
+            <li align="left"><a href="https://yourdost.com/faq">Most Asked Questions</a></li><br>
+            <li align="left"><a href="http://yourdost.com/blog/category/quotes">Motivational Quotes</a></li><br>
+            <li align="left"><a href="http://yourdost.com/blog/">Articles</a></li><br>
+            <li align="left"><a href="http://yourdost.com/blog/category/de-stressing-techniques">De-stressing techniques</a></li><br>
+            <li align="left"><a href="https://yourdost.com/press">Press</a></li><br>
+            <li align="left"><a href="https://yourdost.com/business-offerings/">Business Offerings</a></li><br>
+            <li align="left"><a href="https://yourdost.com/become-an-expert">Become an Expert</a></li><br>
+            <li align="left"><a href="https://yourdost.com/contactus">Contact Us</a></li><br>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <ul style="list-style-type:none;">
+            <li align="left"> <h6>ABOUT US</h6>
+            <li align="left"><a href="https://yourdost.com/testimonials">Testimonials</a></li><br>
+            <li align="left"><a href="https://yourdost.com/team">Team</a></li><br>
+            <li align="left"><a href="https://yourdost.com/partners">Partners</a></li><br>
+            <li align="left"><a href="https://yourdost.com/termsOfService">Terms of Service</a></li><br>
+            <li align="left"><a href="https://yourdost.com/privacyPolicy">Privacy Policy</a></li><br>
+            <li align="left"><a href="https://bitbucket.org/yourdost/bugtracker/issues/new">Report a problem</a></li><br>
+            <li align="left"><a href="https://yourdost.com/jobs">Jobs</a></li><br>
+            <li align="left"><a href="https://yourdost.com/subscription/faq">Care Plan FAQst</a></li><br>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul style="list-style-type:none;">
+          <li align="left"> <h6>Follow US</h6>
+        </ul>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-rss"></a>
+          <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+    <br><br>
+    <div class="row text-center">
+      <div class="col-sm-8" align="left">
+        <h6>About YourDOST</h6>
+        <p>At YourDOST, we provide an online counseling and emotional support platform designed to foster mental wellness. It anonymously connects you with the right expert consisting of psychologists, psychotherapists, counselors, life coaches, career guides and people with rich and deep life experience, who understand you and guide you through completely confidential individual sessions.</p> <br>
+        <i>We are not a medical service or suicide prevention helpline. If you are feeling suicidal, we would suggest you immediately call up a suicide prevention helpline - eg Vandrevala Foundation Helpline - 1 860 266 2345 (24x7), Aasra - +91 22 2754 6669 (24x7).</i> <br> <br><br>
+        <p>Meanwhile, know more about: <a href="#">Anxitey</a> | <a href="#"> Counselling </a> | <a href="#"> Stress </a> | <a href="#"> Depression </a> | <a href="#">Addiction</a> </p>
+      </div>
+      <div class="col-sm-4">
+        <br>
+        <img src="last.jpg" alt="logo">
+        <br><br><br>
+        <a href="https://yourdost.com/become-an-expert"><button type="button" name="button">BECOME AN EXPERT</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fixed-btn">
+  <p>Need Help?</p>
+</div>
+</footer>
+
+</body>
+</html>
